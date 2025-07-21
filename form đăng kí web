@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .login-container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        .login-container p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #333;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #ffb6c1; /* Màu hồng nhạt */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #ff8c94; /* Màu hồng đậm hơn khi hover */
+        }
+        .social-btn {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .facebook {
+            background-color: #3b5998; /* Màu xanh Facebook */
+        }
+        .facebook:hover {
+            background-color: #2d4373; /* Màu xanh đậm hơn khi hover */
+        }
+        .google {
+            background-color: #db4437; /* Màu đỏ Google */
+        }
+        .google:hover {
+            background-color: #a83125; /* Màu đỏ đậm hơn khi hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <p>Đễ sử dụng thêm năng nắng bân cần phải đăng nhập!</p>
+        <form>
+            <input type="email" placeholder="Nhập email hoặc số điện thoại" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button type="submit" class="login-btn">ĐĂNG NHẬP</button>
+        </form>
+        <p>Quên mật khẩu? Đăng ký</p>
+        <p>Hoặc đăng nhập với</p>
+        <button class="social-btn facebook">f Đăng nhập bằng facebook</button>
+        <button class="social-btn google">G Đăng nhập Google</button>
+    </div>
+</body>
+</html>
